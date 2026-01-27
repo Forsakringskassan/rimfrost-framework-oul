@@ -1,6 +1,7 @@
 package se.fk.rimfrost.framework.presentation.kafka;
 
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Instance;
 import jakarta.inject.Inject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,14 +18,14 @@ public class OulMessageHandler
    OulKafkaMapper mapper;
 
    @Inject
-   OulHandlerInterface oulHandlerInterface;
+   Instance<OulHandlerInterface> oulHandlerInterface;
 
    public void consumeOulResponse(OperativtUppgiftslagerResponseMessage oulResponseMessage)
    {
       LOGGER.info("OperativtUppgiftslagerResponseMessage received with KundbehovsflodeId: "
             + oulResponseMessage.getKundbehovsflodeId());
       var oulResponse = mapper.toOulResponse(oulResponseMessage);
-      oulHandlerInterface.handleOulResponse(oulResponse);
+      oulHandlerInterface.get().handleOulResponse(oulResponse);
    }
 
    public void consumeOulStatus(OperativtUppgiftslagerStatusMessage oulStatusMessage)
@@ -32,6 +33,6 @@ public class OulMessageHandler
       LOGGER.info(
             "OperativtUppgiftslagerStatusMessage received with KundbehovsflodeId: " + oulStatusMessage.getKundbehovsflodeId());
       var oulStatus = mapper.toOulStatus(oulStatusMessage);
-      oulHandlerInterface.handleOulStatus(oulStatus);
+      oulHandlerInterface.get().handleOulStatus(oulStatus);
    }
 }
