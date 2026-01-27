@@ -8,11 +8,11 @@ import se.fk.rimfrost.OperativtUppgiftslagerResponseMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
 
 @ApplicationScoped
-public class RegelConsumer
+public class OulKafkaConsumer
 {
 
    @Inject
-   RegelMessageHandler handler;
+   OulMessageHandler handler;
 
 
    @Incoming("operativt-uppgiftslager-responses")

@@ -11,11 +11,12 @@ import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.integration.kafka.dto.OulMessageRequest;
 import java.util.UUID;
 
+@SuppressWarnings("unused")
 @ApplicationScoped
-public class RegelKafkaProducer
+public class OulKafkaProducer
 {
    @Inject
-   RegelKafkaMapper mapper;
+   OulKafkaMapper mapper;
 
    @Inject
    @Channel("operativt-uppgiftslager-requests")

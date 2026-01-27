@@ -5,11 +5,10 @@ import se.fk.rimfrost.OperativtUppgiftslagerResponseMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
 import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.logic.dto.*;
-
 import java.util.UUID;
 
 @ApplicationScoped
-public class RegelKafkaMapper
+public class OulKafkaMapper
 {
 
    public OulResponse toOulResponse(OperativtUppgiftslagerResponseMessage oulResponseMessage)

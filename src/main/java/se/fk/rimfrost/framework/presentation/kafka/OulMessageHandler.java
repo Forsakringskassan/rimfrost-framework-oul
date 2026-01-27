@@ -8,13 +8,13 @@ import se.fk.rimfrost.OperativtUppgiftslagerResponseMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
 
 @ApplicationScoped
-public class RegelMessageHandler
+public class OulMessageHandler
 {
 
-   private static final Logger LOGGER = LoggerFactory.getLogger(RegelMessageHandler.class);
+   private static final Logger LOGGER = LoggerFactory.getLogger(OulMessageHandler.class);
 
    @Inject
-   RegelKafkaMapper mapper;
+   OulKafkaMapper mapper;
 
    @Inject
    OulHandlerInterface oulHandlerInterface;

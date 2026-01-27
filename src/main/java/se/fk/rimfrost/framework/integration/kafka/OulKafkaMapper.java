@@ -5,7 +5,7 @@ import se.fk.rimfrost.OperativtUppgiftslagerRequestMessage;
 import se.fk.rimfrost.framework.integration.kafka.dto.OulMessageRequest;
 
 @ApplicationScoped
-public class RegelKafkaMapper
+public class OulKafkaMapper
 {
 
    public OperativtUppgiftslagerRequestMessage toOulRequestMessage(OulMessageRequest messageRequest)
