@@ -14,7 +14,6 @@ public class OulKafkaConsumer
    @Inject
    OulMessageHandler handler;
 
-
    @Incoming("operativt-uppgiftslager-responses")
    @Blocking
    public void onOulResponse(OperativtUppgiftslagerResponseMessage oulResponseMessage)
