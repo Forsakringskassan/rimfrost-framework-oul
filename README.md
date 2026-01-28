@@ -1,2 +1,2 @@
-# rimfrost-framework-regel-manuell
-Ramverkskomponenter som är gemensamma för alla manuella regler
+# rimfrost-framework-oul
+Ramverkskomponent för hantering av Operativt uppgiftslager
