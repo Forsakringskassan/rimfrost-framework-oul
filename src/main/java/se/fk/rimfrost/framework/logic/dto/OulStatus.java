@@ -10,6 +10,8 @@ public interface OulStatus
 
    UUID uppgiftId();
 
+   UUID utforarId();
+
    UppgiftStatus uppgiftStatus();
 
 }
