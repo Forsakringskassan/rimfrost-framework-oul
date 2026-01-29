@@ -2,6 +2,30 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.0.2 (2026-01-29)
+
+### Bug Fixes
+
+-  bump version to trigger release ([69e9c](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/69e9c98bf6978b1) Ulf Slunga)  
+
+### Other changes
+
+**Delete .github/workflows/maven-ci.yaml**
+
+
+[6c380](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/6c3804ea11c546d) Ulf Slunga *2026-01-29 11:18:15*
+
+**Delete .github/workflows/maven-release.yaml**
+
+
+[1480e](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/1480e1a08c4fcd2) Ulf Slunga *2026-01-29 11:17:59*
+
+**Add files via upload**
+
+
+[f30a9](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/f30a9d43b0e7b4a) Ulf Slunga *2026-01-29 11:16:57*
+
+
 ## 0.0.1 (2026-01-28)
 
 ### Bug Fixes
