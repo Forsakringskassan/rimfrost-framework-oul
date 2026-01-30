@@ -1,4 +1,4 @@
-package se.fk.rimfrost.framework.presentation.kafka;
+package se.fk.rimfrost.framework.oul.presentation.kafka;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Instance;

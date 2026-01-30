@@ -1,10 +1,10 @@
-package se.fk.rimfrost.framework.presentation.kafka;
+package se.fk.rimfrost.framework.oul.presentation.kafka;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import se.fk.rimfrost.OperativtUppgiftslagerResponseMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
 import se.fk.rimfrost.Status;
-import se.fk.rimfrost.framework.logic.dto.*;
+import se.fk.rimfrost.framework.oul.logic.dto.*;
 
 import java.util.UUID;
 
