@@ -1,4 +1,4 @@
-package se.fk.rimfrost.framework.logic.dto;
+package se.fk.rimfrost.framework.oul.logic.dto;
 
 public enum UppgiftStatus
 {
