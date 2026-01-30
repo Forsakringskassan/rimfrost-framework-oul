@@ -2,6 +2,20 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.0.3 (2026-01-30)
+
+### Bug Fixes
+
+-  groupid se.fk.rimfrost.framework.oul ([8ceff](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/8ceffd289d27b7b) Nils Elveros)  
+
+### Other changes
+
+**change parent artifact**
+
+
+[c62ac](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/c62ac27c634fd36) Nils Elveros *2026-01-30 13:01:31*
+
+
 ## 0.0.2 (2026-01-29)
 
 ### Bug Fixes
