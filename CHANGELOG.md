@@ -2,6 +2,21 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.0.4 (2026-02-02)
+
+### Bug Fixes
+
+-  spotless ([e47c6](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/e47c6698d9c76cf) Nils Elveros)  
+-  reintroduce integration package which was removed by misstake ([64aa7](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/64aa7d196b2c693) Nils Elveros)  
+
+### Other changes
+
+**fix**
+
+
+[12ad5](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/12ad5e286ee031f) Nils Elveros *2026-02-02 09:34:17*
+
+
 ## 0.0.3 (2026-01-30)
 
 ### Bug Fixes
