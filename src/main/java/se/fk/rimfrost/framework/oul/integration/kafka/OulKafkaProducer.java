@@ -9,6 +9,8 @@ import se.fk.rimfrost.OperativtUppgiftslagerRequestMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
 import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.oul.integration.kafka.dto.OulMessageRequest;
+import se.fk.rimfrost.framework.oul.integration.kafka.OulKafkaMapper;
+
 import java.util.UUID;
 
 @SuppressWarnings("unused")
