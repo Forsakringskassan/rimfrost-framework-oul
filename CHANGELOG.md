@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.0.5 (2026-02-05)
+
+### Bug Fixes
+
+-  Add shared /done endpoint ([d3513](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/d3513a99bf400cd) Lars Persson)  
+
 ## 0.0.4 (2026-02-02)
 
 ### Bug Fixes
