@@ -30,7 +30,7 @@ public class OulKafkaProducer
    @Inject
    @Channel("operativt-uppgiftslager-requests")
    @OnOverflow(value = OnOverflow.Strategy.BUFFER, bufferSize = 1024)
-   Emitter<Message<OperativtUppgiftslagerRequestMessage>> oulRequestEmitter;
+   Emitter<OperativtUppgiftslagerRequestMessage> oulRequestEmitter;
 
    @Inject
    @Channel("operativt-uppgiftslager-status-control")
