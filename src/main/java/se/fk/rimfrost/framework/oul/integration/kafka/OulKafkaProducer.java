@@ -2,15 +2,22 @@ package se.fk.rimfrost.framework.oul.integration.kafka;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+
+import org.apache.kafka.common.header.internals.RecordHeader;
+import org.apache.kafka.common.header.internals.RecordHeaders;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
+import org.eclipse.microprofile.reactive.messaging.Message;
 import org.eclipse.microprofile.reactive.messaging.OnOverflow;
+
+import io.smallrye.reactive.messaging.kafka.api.OutgoingKafkaRecordMetadata;
 import se.fk.rimfrost.OperativtUppgiftslagerRequestMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
 import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.oul.integration.kafka.dto.OulMessageRequest;
 import se.fk.rimfrost.framework.oul.integration.kafka.OulKafkaMapper;
 
+import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 
 @SuppressWarnings("unused")
@@ -23,7 +30,7 @@ public class OulKafkaProducer
    @Inject
    @Channel("operativt-uppgiftslager-requests")
    @OnOverflow(value = OnOverflow.Strategy.BUFFER, bufferSize = 1024)
-   Emitter<OperativtUppgiftslagerRequestMessage> oulRequestEmitter;
+   Emitter<Message<OperativtUppgiftslagerRequestMessage>> oulRequestEmitter;
 
    @Inject
    @Channel("operativt-uppgiftslager-status-control")
@@ -33,7 +40,11 @@ public class OulKafkaProducer
    public void sendOulRequest(OulMessageRequest messageRequest)
    {
       var request = mapper.toOulRequestMessage(messageRequest);
-      oulRequestEmitter.send(request);
+      var kafkaMetadata = OutgoingKafkaRecordMetadata.builder()
+            .addHeaders(new RecordHeader("replyTo", messageRequest.replyToTopic().getBytes(StandardCharsets.UTF_8))).build();
+      var message = Message.of(request).addMetadata(kafkaMetadata);
+
+      oulRequestEmitter.send(message);
    }
 
    public void sendOulStatusUpdate(UUID uppgiftId, Status status)

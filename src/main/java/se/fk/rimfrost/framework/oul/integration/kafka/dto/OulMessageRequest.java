@@ -21,4 +21,6 @@ public interface OulMessageRequest
 
    String url();
 
+   String replyToTopic();
+
 }
