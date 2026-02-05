@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.0 (2026-02-05)
+
+### Features
+
+-  add replyTo metadata header in OulRequestMessage ([04abf](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/04abfd7cfaf7306) Nils Elveros)  
+
 ## 0.0.5 (2026-02-05)
 
 ### Bug Fixes
