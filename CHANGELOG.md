@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.1 (2026-02-05)
+
+### Bug Fixes
+
+-  remove Message from emitter in oulproducer. ([f8813](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/f8813a61a50a450) Nils Elveros)  
+
 ## 0.1.0 (2026-02-05)
 
 ### Features
