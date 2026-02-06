@@ -1,7 +1,7 @@
 # rimfrost-framework-oul
 Ramverkskomponent för hantering av Operativt uppgiftslager
 
-Innehåller consumer/producer för för klienter som skapar nya operativa uppgifter.
+Innehåller consumer/producer för klienter som skapar nya operativa uppgifter.
 Skapad för att underlätta för implementation av manuella regler att integrera med operativt-uppgifts-lager.
 
 _integration/kafka_ innehåller DTO för message request som skickas till OUL för att skapa ny operativ uppgift.<br>
