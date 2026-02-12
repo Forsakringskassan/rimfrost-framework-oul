@@ -2,6 +2,14 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.2 (2026-02-11)
+
+### Bug Fixes
+
+-  Remove rule rest dependencies ([ce3d3](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/ce3d3898bf2d8df) Lars Persson)  
+-  uppdaterar README ([b3ce9](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/b3ce9923baa2cfb) Ulf Slunga)  
+-  uppdaterar README ([fa31b](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/fa31bc7a73f6165) Ulf Slunga)  
+
 ## 0.1.1 (2026-02-05)
 
 ### Bug Fixes
