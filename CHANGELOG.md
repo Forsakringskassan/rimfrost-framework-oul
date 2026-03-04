@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.3 (2026-03-04)
+
+### Bug Fixes
+
+-  Rename kundbehovsflode to handlaggning ([5ba57](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/5ba579fc5f3672d) Lars Persson)  
+
 ## 0.1.2 (2026-02-11)
 
 ### Bug Fixes
