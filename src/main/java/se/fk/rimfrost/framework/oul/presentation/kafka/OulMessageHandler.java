@@ -22,8 +22,8 @@ public class OulMessageHandler
 
    public void consumeOulResponse(OperativtUppgiftslagerResponseMessage oulResponseMessage)
    {
-      LOGGER.info("OperativtUppgiftslagerResponseMessage received with KundbehovsflodeId: "
-            + oulResponseMessage.getKundbehovsflodeId());
+      LOGGER.info("OperativtUppgiftslagerResponseMessage received with HandlaggningId: "
+            + oulResponseMessage.getHandlaggningId());
       var oulResponse = mapper.toOulResponse(oulResponseMessage);
       oulHandlerInterface.get().handleOulResponse(oulResponse);
    }
@@ -31,7 +31,7 @@ public class OulMessageHandler
    public void consumeOulStatus(OperativtUppgiftslagerStatusMessage oulStatusMessage)
    {
       LOGGER.info(
-            "OperativtUppgiftslagerStatusMessage received with KundbehovsflodeId: " + oulStatusMessage.getKundbehovsflodeId());
+            "OperativtUppgiftslagerStatusMessage received with HandlaggningId: " + oulStatusMessage.getHandlaggningId());
       var oulStatus = mapper.toOulStatus(oulStatusMessage);
       oulHandlerInterface.get().handleOulStatus(oulStatus);
    }

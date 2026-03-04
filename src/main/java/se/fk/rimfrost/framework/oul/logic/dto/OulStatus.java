@@ -6,7 +6,7 @@ import java.util.UUID;
 @Value.Immutable
 public interface OulStatus
 {
-   UUID kundbehovsflodeId();
+   UUID handlaggningId();
 
    UUID uppgiftId();
 

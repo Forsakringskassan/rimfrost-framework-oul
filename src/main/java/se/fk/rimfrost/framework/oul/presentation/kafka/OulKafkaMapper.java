@@ -15,7 +15,7 @@ public class OulKafkaMapper
    public OulResponse toOulResponse(OperativtUppgiftslagerResponseMessage oulResponseMessage)
    {
       return ImmutableOulResponse.builder()
-            .kundbehovsflodeId(UUID.fromString(oulResponseMessage.getKundbehovsflodeId()))
+            .handlaggningId(UUID.fromString(oulResponseMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulResponseMessage.getUppgiftId()))
             .build();
    }
@@ -24,7 +24,7 @@ public class OulKafkaMapper
    {
 
       return ImmutableOulStatus.builder()
-            .kundbehovsflodeId(UUID.fromString(oulStatusMessage.getKundbehovsflodeId()))
+            .handlaggningId(UUID.fromString(oulStatusMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulStatusMessage.getUppgiftId()))
             .utforarId(UUID.fromString(oulStatusMessage.getUtforarId()))
             .uppgiftStatus(mapStatus(oulStatusMessage.getStatus()))
