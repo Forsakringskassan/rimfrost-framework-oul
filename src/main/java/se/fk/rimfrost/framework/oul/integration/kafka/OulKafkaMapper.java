@@ -12,8 +12,8 @@ public class OulKafkaMapper
    {
       var request = new OperativtUppgiftslagerRequestMessage();
       request.setVersion("1.0");
-      request.setKundbehovsflodeId(messageRequest.kundbehovsflodeId().toString());
-      request.setKundbehov(messageRequest.kundbehov());
+      request.setHandlaggningId(messageRequest.handlaggningId().toString());
+      request.setYrkande(messageRequest.yrkande());
       request.setRegel(messageRequest.regel());
       request.setRoll(messageRequest.roll());
       request.setBeskrivning(messageRequest.beskrivning());

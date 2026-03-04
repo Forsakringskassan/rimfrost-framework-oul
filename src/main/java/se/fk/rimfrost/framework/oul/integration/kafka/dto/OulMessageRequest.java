@@ -7,9 +7,9 @@ import java.util.UUID;
 public interface OulMessageRequest
 {
 
-   UUID kundbehovsflodeId();
+   UUID handlaggningId();
 
-   String kundbehov();
+   String yrkande();
 
    String regel();
 

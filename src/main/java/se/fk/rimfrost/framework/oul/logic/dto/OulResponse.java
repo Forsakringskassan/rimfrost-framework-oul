@@ -7,7 +7,7 @@ import java.util.UUID;
 public interface OulResponse
 {
 
-   UUID kundbehovsflodeId();
+   UUID handlaggningId();
 
    UUID uppgiftId();
 
