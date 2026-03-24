@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.4 (2026-03-24)
+
+### Bug Fixes
+
+-  Add individuals involved in yrkande to OUL request message ([906b2](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/906b2e5f578f3c2) Lars Persson)  
+
 ## 0.1.3 (2026-03-04)
 
 ### Bug Fixes
