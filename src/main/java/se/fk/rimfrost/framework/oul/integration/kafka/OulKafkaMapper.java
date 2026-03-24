@@ -4,6 +4,8 @@ import jakarta.enterprise.context.ApplicationScoped;
 import se.fk.rimfrost.OperativtUppgiftslagerRequestMessage;
 import se.fk.rimfrost.framework.oul.integration.kafka.dto.OulMessageRequest;
 
+import java.util.UUID;
+
 @ApplicationScoped
 public class OulKafkaMapper
 {
@@ -13,7 +15,7 @@ public class OulKafkaMapper
       var request = new OperativtUppgiftslagerRequestMessage();
       request.setVersion("1.0");
       request.setHandlaggningId(messageRequest.handlaggningId().toString());
-      request.setYrkande(messageRequest.yrkande());
+      request.setIndivider(messageRequest.individer().stream().map(UUID::toString).toArray(String[]::new));
       request.setRegel(messageRequest.regel());
       request.setRoll(messageRequest.roll());
       request.setBeskrivning(messageRequest.beskrivning());
