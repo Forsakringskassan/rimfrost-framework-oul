@@ -26,7 +26,7 @@ public class OulKafkaMapper
       return ImmutableOulStatus.builder()
             .handlaggningId(UUID.fromString(oulStatusMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulStatusMessage.getUppgiftId()))
-            .utforarId(UUID.fromString(oulStatusMessage.getUtforarId()))
+            .utforarId(toIdtyp(oulStatusMessage.getUtforarId()))
             .uppgiftStatus(mapStatus(oulStatusMessage.getStatus()))
             .build();
    }
@@ -44,5 +44,18 @@ public class OulKafkaMapper
          default:
             return UppgiftStatus.AVSLUTAD;
       }
+   }
+
+   private Idtyp toIdtyp(se.fk.rimfrost.Idtyp idtyp)
+   {
+      if (idtyp == null)
+      {
+         return null;
+      }
+
+      return ImmutableIdtyp.builder()
+            .typId(idtyp.getTypid())
+            .varde(idtyp.getVarde())
+            .build();
    }
 }

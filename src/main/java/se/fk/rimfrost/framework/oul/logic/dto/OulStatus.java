@@ -1,5 +1,6 @@
 package se.fk.rimfrost.framework.oul.logic.dto;
 
+import jakarta.annotation.Nullable;
 import org.immutables.value.Value;
 import java.util.UUID;
 
@@ -10,7 +11,8 @@ public interface OulStatus
 
    UUID uppgiftId();
 
-   UUID utforarId();
+   @Nullable
+   Idtyp utforarId();
 
    UppgiftStatus uppgiftStatus();
 
