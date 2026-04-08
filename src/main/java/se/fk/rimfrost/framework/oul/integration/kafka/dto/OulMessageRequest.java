@@ -1,6 +1,7 @@
 package se.fk.rimfrost.framework.oul.integration.kafka.dto;
 
 import org.immutables.value.Value;
+import se.fk.rimfrost.framework.oul.logic.dto.Idtyp;
 
 import java.util.List;
 import java.util.UUID;
@@ -11,7 +12,7 @@ public interface OulMessageRequest
 
    UUID handlaggningId();
 
-   List<UUID> individer();
+   List<Idtyp> individer();
 
    String regel();
 
