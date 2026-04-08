@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.5 (2026-04-08)
+
+### Bug Fixes
+
+-  Use Idtyp for individ list and utforarId ([5cc56](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/5cc56fcbf2f760b) Lars Persson)  
+
 ## 0.1.4 (2026-03-24)
 
 ### Bug Fixes
