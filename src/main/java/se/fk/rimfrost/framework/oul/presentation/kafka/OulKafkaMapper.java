@@ -3,9 +3,7 @@ package se.fk.rimfrost.framework.oul.presentation.kafka;
 import jakarta.enterprise.context.ApplicationScoped;
 import se.fk.rimfrost.OperativtUppgiftslagerResponseMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
-import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.oul.logic.dto.*;
-
 import java.util.UUID;
 
 @ApplicationScoped
@@ -27,23 +25,8 @@ public class OulKafkaMapper
             .handlaggningId(UUID.fromString(oulStatusMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulStatusMessage.getUppgiftId()))
             .utforarId(toIdtyp(oulStatusMessage.getUtforarId()))
-            .uppgiftStatus(mapStatus(oulStatusMessage.getStatus()))
+            .uppgiftStatus(oulStatusMessage.getStatus())
             .build();
-   }
-
-   private UppgiftStatus mapStatus(Status status)
-   {
-
-      switch (status)
-      {
-         case NY:
-            return UppgiftStatus.NY;
-         case TILLDELAD:
-            return UppgiftStatus.TILLDELAD;
-         case AVSLUTAD:
-         default:
-            return UppgiftStatus.AVSLUTAD;
-      }
    }
 
    private Idtyp toIdtyp(se.fk.rimfrost.Idtyp idtyp)
@@ -54,7 +37,7 @@ public class OulKafkaMapper
       }
 
       return ImmutableIdtyp.builder()
-            .typId(idtyp.getTypid())
+            .typId(idtyp.getTypId())
             .varde(idtyp.getVarde())
             .build();
    }
