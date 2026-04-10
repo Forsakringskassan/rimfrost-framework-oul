@@ -2,21 +2,15 @@ package se.fk.rimfrost.framework.oul.integration.kafka;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-
 import org.apache.kafka.common.header.internals.RecordHeader;
-import org.apache.kafka.common.header.internals.RecordHeaders;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
 import org.eclipse.microprofile.reactive.messaging.Message;
 import org.eclipse.microprofile.reactive.messaging.OnOverflow;
-
 import io.smallrye.reactive.messaging.kafka.api.OutgoingKafkaRecordMetadata;
 import se.fk.rimfrost.OperativtUppgiftslagerRequestMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
-import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.oul.integration.kafka.dto.OulMessageRequest;
-import se.fk.rimfrost.framework.oul.integration.kafka.OulKafkaMapper;
-
 import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 
@@ -47,7 +41,7 @@ public class OulKafkaProducer
       oulRequestEmitter.send(message);
    }
 
-   public void sendOulStatusUpdate(UUID uppgiftId, Status status)
+   public void sendOulStatusUpdate(UUID uppgiftId, String status)
    {
       var message = new OperativtUppgiftslagerStatusMessage();
       message.setUppgiftId(uppgiftId.toString());

@@ -14,6 +14,6 @@ public interface OulStatus
    @Nullable
    Idtyp utforarId();
 
-   UppgiftStatus uppgiftStatus();
+   String uppgiftStatus();
 
 }

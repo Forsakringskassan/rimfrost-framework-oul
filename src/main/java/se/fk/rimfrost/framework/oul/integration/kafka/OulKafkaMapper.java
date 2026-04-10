@@ -25,12 +25,11 @@ public class OulKafkaMapper
       return request;
    }
 
-   private Idtyp toApiIdtyp(se.fk.rimfrost.framework.oul.logic.dto.Idtyp idtyp)
+   public Idtyp toApiIdtyp(se.fk.rimfrost.framework.oul.logic.dto.Idtyp idtyp)
    {
       Idtyp apiIdtyp = new Idtyp();
-      apiIdtyp.setTypid(idtyp.typId());
+      apiIdtyp.setTypId(idtyp.typId());
       apiIdtyp.setVarde(idtyp.varde());
-
       return apiIdtyp;
    }
 }
