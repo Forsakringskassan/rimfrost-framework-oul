@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.6 (2026-04-10)
+
+### Bug Fixes
+
+-  status och idtyp uppdaterad. public toApiIdtyp ([2a189](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/2a1892d9b0185e3) Ulf Slunga)  
+
 ## 0.1.5 (2026-04-08)
 
 ### Bug Fixes
