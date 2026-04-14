@@ -3,6 +3,7 @@ package se.fk.rimfrost.framework.oul.presentation.kafka;
 import jakarta.enterprise.context.ApplicationScoped;
 import se.fk.rimfrost.OperativtUppgiftslagerResponseMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
+import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.oul.logic.dto.*;
 import java.util.UUID;
 
@@ -25,7 +26,7 @@ public class OulKafkaMapper
             .handlaggningId(UUID.fromString(oulStatusMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulStatusMessage.getUppgiftId()))
             .utforarId(toIdtyp(oulStatusMessage.getUtforarId()))
-            .uppgiftStatus(oulStatusMessage.getStatus())
+            .uppgiftStatus(mapStatus(oulStatusMessage.getStatus()))
             .build();
    }
 
@@ -41,4 +42,13 @@ public class OulKafkaMapper
             .varde(idtyp.getVarde())
             .build();
    }
+
+   private UppgiftStatus mapStatus(Status status)
+    {
+        return switch (status) {
+            case NY -> UppgiftStatus.NY;
+            case TILLDELAD -> UppgiftStatus.TILLDELAD;
+            case AVSLUTAD -> UppgiftStatus.AVSLUTAD;
+        };
+    }
 }
