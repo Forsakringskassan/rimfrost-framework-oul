@@ -2,6 +2,13 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 0.1.7 (2026-04-14)
+
+### Bug Fixes
+
+-  mappar till UppgiftStatus ([198bf](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/198bf7e3623d7a0) Ulf Slunga)  
+-  bump asyncapi. Status som enum ist för string ([9f3e2](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/9f3e235510410aa) Ulf Slunga)  
+
 ## 0.1.6 (2026-04-10)
 
 ### Bug Fixes
