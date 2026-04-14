@@ -10,6 +10,7 @@ import org.eclipse.microprofile.reactive.messaging.OnOverflow;
 import io.smallrye.reactive.messaging.kafka.api.OutgoingKafkaRecordMetadata;
 import se.fk.rimfrost.OperativtUppgiftslagerRequestMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
+import se.fk.rimfrost.Status;
 import se.fk.rimfrost.framework.oul.integration.kafka.dto.OulMessageRequest;
 import java.nio.charset.StandardCharsets;
 import java.util.UUID;
@@ -41,7 +42,7 @@ public class OulKafkaProducer
       oulRequestEmitter.send(message);
    }
 
-   public void sendOulStatusUpdate(UUID uppgiftId, String status)
+   public void sendOulStatusUpdate(UUID uppgiftId, Status status)
    {
       var message = new OperativtUppgiftslagerStatusMessage();
       message.setUppgiftId(uppgiftId.toString());
