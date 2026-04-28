@@ -2,6 +2,20 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.0.0 (2026-04-28)
+
+### Breaking changes
+
+-  release 1.0 ([38b94](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/38b94576c9d3536) Ulf Slunga)  
+
+### Features
+
+-  release 1.0 ([38b94](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/38b94576c9d3536) Ulf Slunga)  
+
+### Bug Fixes
+
+-  released versions ([d3421](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/d34216ad758cd0f) Ulf Slunga)  
+
 ## 0.1.7 (2026-04-14)
 
 ### Bug Fixes
