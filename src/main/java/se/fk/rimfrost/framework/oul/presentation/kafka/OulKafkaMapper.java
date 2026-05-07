@@ -27,6 +27,7 @@ public class OulKafkaMapper
             .uppgiftId(UUID.fromString(oulStatusMessage.getUppgiftId()))
             .utforarId(toIdtyp(oulStatusMessage.getUtforarId()))
             .uppgiftStatus(mapStatus(oulStatusMessage.getStatus()))
+            .cloudeventAttributes(oulStatusMessage.getCloudeventAttributes())
             .build();
    }
 

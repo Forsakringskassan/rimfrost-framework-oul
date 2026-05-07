@@ -5,8 +5,6 @@ import se.fk.rimfrost.Idtyp;
 import se.fk.rimfrost.OperativtUppgiftslagerRequestMessage;
 import se.fk.rimfrost.framework.oul.integration.kafka.dto.OulMessageRequest;
 
-import java.util.UUID;
-
 @ApplicationScoped
 public class OulKafkaMapper
 {
@@ -22,6 +20,7 @@ public class OulKafkaMapper
       request.setBeskrivning(messageRequest.beskrivning());
       request.setVerksamhetslogik(messageRequest.verksamhetslogik());
       request.setUrl(messageRequest.url());
+      request.setCloudeventAttributes(messageRequest.cloudeventAttributes());
       return request;
    }
 
