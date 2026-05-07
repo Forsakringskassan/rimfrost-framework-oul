@@ -50,6 +50,7 @@ public class OulKafkaMapper
             case NY -> UppgiftStatus.NY;
             case TILLDELAD -> UppgiftStatus.TILLDELAD;
             case AVSLUTAD -> UppgiftStatus.AVSLUTAD;
+            case AVBRUTEN -> UppgiftStatus.AVBRUTEN;
         };
     }
 }
