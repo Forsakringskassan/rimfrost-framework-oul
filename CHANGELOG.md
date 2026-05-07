@@ -2,6 +2,13 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.0.2 (2026-05-07)
+
+### Bug Fixes
+
+-  lägger till testfall ([547bc](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/547bc1d6488b482) Ulf Slunga)  
+-  ny status Avbruten ([c7c88](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/c7c88ecbabd1abd) Ulf Slunga)  
+
 ## 1.0.1 (2026-05-07)
 
 ### Bug Fixes
