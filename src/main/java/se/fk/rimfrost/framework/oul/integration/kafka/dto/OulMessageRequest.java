@@ -2,8 +2,8 @@ package se.fk.rimfrost.framework.oul.integration.kafka.dto;
 
 import org.immutables.value.Value;
 import se.fk.rimfrost.framework.oul.logic.dto.Idtyp;
-
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 @Value.Immutable
@@ -25,5 +25,7 @@ public interface OulMessageRequest
    String url();
 
    String replyToTopic();
+
+   Map<String, String> cloudeventAttributes();
 
 }
