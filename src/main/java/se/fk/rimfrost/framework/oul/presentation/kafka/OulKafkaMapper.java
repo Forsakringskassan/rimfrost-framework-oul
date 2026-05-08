@@ -16,6 +16,7 @@ public class OulKafkaMapper
       return ImmutableOulResponse.builder()
             .handlaggningId(UUID.fromString(oulResponseMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulResponseMessage.getUppgiftId()))
+            .cloudeventAttributes(oulResponseMessage.getCloudeventAttributes())
             .build();
    }
 
