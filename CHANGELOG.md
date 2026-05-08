@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.0.3 (2026-05-08)
+
+### Bug Fixes
+
+-  lägger till cloudevent attributes till OUL response, inklusive test ([01a93](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/01a936690c91f38) Ulf Slunga)  
+
 ## 1.0.2 (2026-05-07)
 
 ### Bug Fixes
