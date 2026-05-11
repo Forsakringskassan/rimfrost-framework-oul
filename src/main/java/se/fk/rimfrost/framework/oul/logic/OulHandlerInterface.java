@@ -1,4 +1,4 @@
-package se.fk.rimfrost.framework.oul.presentation.kafka;
+package se.fk.rimfrost.framework.oul.logic;
 
 import se.fk.rimfrost.framework.oul.logic.dto.OulResponse;
 import se.fk.rimfrost.framework.oul.logic.dto.OulStatus;

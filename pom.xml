@@ -29,24 +29,9 @@
       <version>3.20.3</version>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
-      <version>3.15.7</version>
-    </dependency>
-    <dependency>
-      <groupId>se.fk.rimfrost</groupId>
-      <artifactId>rimfrost-service-oul-asyncapi</artifactId>
-      <version>1.0.3</version>
-    </dependency>
-    <dependency>
       <groupId>org.immutables</groupId>
       <artifactId>value</artifactId>
       <version>2.11.6</version>
-    </dependency>
-    <dependency>
-      <groupId>se.fk.github.logging</groupId>
-      <artifactId>fk-logging</artifactId>
-      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>jakarta.ws.rs</groupId>
@@ -58,12 +43,6 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
       <version>5.12.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-junit-jupiter</artifactId>
-      <version>5.17.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
