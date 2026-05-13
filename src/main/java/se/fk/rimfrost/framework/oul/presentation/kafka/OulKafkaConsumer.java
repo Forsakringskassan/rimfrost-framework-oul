@@ -1,0 +1,23 @@
+package se.fk.rimfrost.framework.oul.presentation.kafka;
+
+import io.smallrye.common.annotation.Blocking;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import org.eclipse.microprofile.reactive.messaging.Incoming;
+import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
+
+@ApplicationScoped
+public class OulKafkaConsumer
+{
+
+   @Inject
+   OulMessageHandler handler;
+
+   @Incoming("operativt-uppgiftslager-status-notification")
+   @Blocking
+   public void onOulStatusMessage(OperativtUppgiftslagerStatusMessage oulStatusMessage)
+   {
+      handler.consumeOulStatus(oulStatusMessage);
+   }
+
+}
