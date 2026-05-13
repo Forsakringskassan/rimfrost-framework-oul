@@ -4,7 +4,6 @@ import io.smallrye.common.annotation.Blocking;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
-import se.fk.rimfrost.OperativtUppgiftslagerResponseMessage;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
 
 @ApplicationScoped
@@ -13,13 +12,6 @@ public class OulKafkaConsumer
 
    @Inject
    OulMessageHandler handler;
-
-   @Incoming("operativt-uppgiftslager-responses")
-   @Blocking
-   public void onOulResponse(OperativtUppgiftslagerResponseMessage oulResponseMessage)
-   {
-      handler.consumeOulResponse(oulResponseMessage);
-   }
 
    @Incoming("operativt-uppgiftslager-status-notification")
    @Blocking
