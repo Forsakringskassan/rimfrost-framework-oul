@@ -2,6 +2,24 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.0.4 (2026-05-13)
+
+### Bug Fixes
+
+-  removed OUL kafka messaging ([95679](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/95679c137966afe) Ulf Slunga)  
+
+### Other changes
+
+**Restore kafka functionality still required by OUL**
+
+* This commit restores some parts removed in previous commit that 
+* is still needed by OUL (parts related to status notification). It 
+* also removes parts related to OulResponse since that is handled by 
+* REST api. The commit also bumps dependency versions. 
+
+[68dfa](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/68dfacceaa726de) Lars Persson *2026-05-13 07:20:57*
+
+
 ## 1.0.3 (2026-05-08)
 
 ### Bug Fixes
