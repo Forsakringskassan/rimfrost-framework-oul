@@ -2,6 +2,8 @@ package se.fk.rimfrost.framework.oul.logic.dto;
 
 import jakarta.annotation.Nullable;
 import org.immutables.value.Value;
+
+import java.time.OffsetDateTime;
 import java.util.Map;
 import java.util.UUID;
 
@@ -19,4 +21,6 @@ public interface OulStatus
 
    Map<String, String> cloudeventAttributes();
 
+   @Nullable
+   OffsetDateTime planeradTill();
 }
