@@ -2,6 +2,19 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.0.5 (2026-06-02)
+
+### Bug Fixes
+
+-  Bump rimfrost-service-oul-asyncapi version ([bb0b4](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/bb0b402e416634c) Lars Persson)  
+-  **deps**  update dependency org.immutables:value to v2.12.2 ([7088a](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/7088a9b18818490) renovate[bot])  
+-  Add basic tests for verifying rimfrost-framework-oul ([088a8](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/088a8b6ba2c367e) Lars Persson)  
+
+### Dependency updates
+
+- update dependency org.immutables:value-processor to v2.12.2 ([1ae78](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/1ae782a61410674) renovate[bot])  
+- update dependency org.junit.jupiter:junit-jupiter to v5.14.4 ([3a713](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/3a7131e7b53fba6) renovate[bot])  
+- add renovate.json ([3b1b6](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/3b1b672901d3424) renovate[bot])  
 ## 1.0.4 (2026-05-13)
 
 ### Bug Fixes
