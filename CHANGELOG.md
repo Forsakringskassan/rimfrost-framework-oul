@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.0.6 (2026-06-04)
+
+### Bug Fixes
+
+-  Remove a few unused dependencies ([9e6a2](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/9e6a28fbfc87ef3) Lars Persson)  
+
 ## 1.0.5 (2026-06-02)
 
 ### Bug Fixes
