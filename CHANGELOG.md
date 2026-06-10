@@ -2,7 +2,13 @@
 
 Changelog of rimfrost-framework-oul.
 
-## 1.0.6 (2026-06-04)
+## 1.1.1 (2026-06-10)
+
+### Bug Fixes
+
+-  Bump rimfrost-service-oul-asyncapi version ([0db21](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/0db21438e0f690d) Lars Persson)  
+
+## rimfrost-1.1 (2026-06-04)
 
 ### Bug Fixes
 
