@@ -19,7 +19,7 @@ public interface OulStatus
 
    String uppgiftStatus();
 
-   Map<String, String> cloudeventAttributes();
+   ProcessInfo processInfo();
 
    @Nullable
    OffsetDateTime planeradTill();

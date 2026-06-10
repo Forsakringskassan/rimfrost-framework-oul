@@ -12,12 +12,17 @@ public class OulKafkaMapper
    public OulStatus toOulStatus(OperativtUppgiftslagerStatusMessage oulStatusMessage)
    {
 
+      var processInfo = ImmutableProcessInfo.builder()
+            .replyTopic(oulStatusMessage.getProcessInfo().getReplyTopic())
+            .cloudeventAttributes(oulStatusMessage.getProcessInfo().getCloudeventAttributes())
+            .build();
+
       return ImmutableOulStatus.builder()
             .handlaggningId(UUID.fromString(oulStatusMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulStatusMessage.getUppgiftId()))
             .utforarId(toIdtyp(oulStatusMessage.getUtforarId()))
             .uppgiftStatus(oulStatusMessage.getStatus())
-            .cloudeventAttributes(oulStatusMessage.getCloudeventAttributes())
+            .processInfo(processInfo)
             .planeradTill(oulStatusMessage.getPlaneradTill())
             .build();
    }

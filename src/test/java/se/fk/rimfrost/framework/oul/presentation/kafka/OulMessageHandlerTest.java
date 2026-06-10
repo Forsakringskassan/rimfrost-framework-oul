@@ -9,9 +9,11 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import se.fk.rimfrost.Idtyp;
 import se.fk.rimfrost.OperativtUppgiftslagerStatusMessage;
+import se.fk.rimfrost.ProcessInfo;
 import se.fk.rimfrost.framework.oul.logic.OulHandlerInterface;
 import se.fk.rimfrost.framework.oul.logic.dto.ImmutableIdtyp;
 import se.fk.rimfrost.framework.oul.logic.dto.ImmutableOulStatus;
+import se.fk.rimfrost.framework.oul.logic.dto.ImmutableProcessInfo;
 import se.fk.rimfrost.framework.oul.logic.dto.OulStatus;
 
 import java.util.Map;
@@ -42,12 +44,17 @@ public class OulMessageHandlerTest
             .varde(oulStatusMessage.getUtforarId().getVarde())
             .build();
 
+      var processInfo = ImmutableProcessInfo.builder()
+            .replyTopic(oulStatusMessage.getProcessInfo().getReplyTopic())
+            .cloudeventAttributes(oulStatusMessage.getProcessInfo().getCloudeventAttributes())
+            .build();
+
       return ImmutableOulStatus.builder()
             .handlaggningId(UUID.fromString(oulStatusMessage.getHandlaggningId()))
             .uppgiftId(UUID.fromString(oulStatusMessage.getUppgiftId()))
             .utforarId(utforarId)
             .uppgiftStatus(oulStatusMessage.getStatus())
-            .cloudeventAttributes(oulStatusMessage.getCloudeventAttributes())
+            .processInfo(processInfo)
             .build();
    }
 
@@ -57,12 +64,16 @@ public class OulMessageHandlerTest
       utforarId.setTypId(UUID.randomUUID().toString());
       utforarId.setVarde(UUID.randomUUID().toString());
 
+      var processInfo = new ProcessInfo();
+      processInfo.setReplyTopic("test-topic");
+      processInfo.setCloudeventAttributes(Map.of("TestKey", "TestValue"));
+
       var operativtUppgiftslagerStatusMessage = new OperativtUppgiftslagerStatusMessage();
       operativtUppgiftslagerStatusMessage.setHandlaggningId(UUID.randomUUID().toString());
       operativtUppgiftslagerStatusMessage.setUppgiftId(UUID.randomUUID().toString());
       operativtUppgiftslagerStatusMessage.setStatus("TEST");
       operativtUppgiftslagerStatusMessage.setUtforarId(utforarId);
-      operativtUppgiftslagerStatusMessage.setCloudeventAttributes(Map.of("TestKey", "TestValue"));
+      operativtUppgiftslagerStatusMessage.setProcessInfo(processInfo);
 
       return operativtUppgiftslagerStatusMessage;
    }
