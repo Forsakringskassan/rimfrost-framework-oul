@@ -2,6 +2,16 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.1.2 (2026-09-18)
+
+### Bug Fixes
+
+-  Specify OUL kafka status notification connector ([3981e](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/3981e760870d76c) Lars Persson)  
+
+### Dependency updates
+
+- update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.16.0 ([51cc6](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/51cc6d5a107889a) renovate[bot])  
+- pin forsakringskassan/.github action to d1349e6 ([0f987](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/0f987f8c85c8a5c) renovate[bot])  
 ## 1.1.1 (2026-06-10)
 
 ### Bug Fixes
