@@ -2,6 +2,20 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.1.4 (2026-10-28)
+
+### Bug Fixes
+
+-  Replace github workflows ([b1cbc](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/b1cbc1de72f0261) Lars Persson)  
+-  **deps**  update dependency org.immutables:value to v2.12.3 ([55a2c](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/55a2cfbd2fa0a7b) renovate[bot])  
+
+### Dependency updates
+
+- update dependency org.immutables:value-processor to v2.12.3 ([15354](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/1535479f1ed57ce) renovate[bot])  
+- update forsakringskassan/.github digest to cbd74f1 ([bfacf](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/bfacf11cd301d6c) renovate[bot])  
+- update forsakringskassan/.github digest to bfb01f7 ([3fb30](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/3fb3003a14091de) renovate[bot])  
+## rimfrost-1_2 (2026-09-23)
+
 ## 1.1.3 (2026-09-23)
 
 ### Bug Fixes
