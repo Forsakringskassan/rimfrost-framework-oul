@@ -45,7 +45,6 @@ public class OulMessageHandlerTest
             .build();
 
       var processInfo = ImmutableProcessInfo.builder()
-            .replyTopic(oulStatusMessage.getProcessInfo().getReplyTopic())
             .cloudeventAttributes(oulStatusMessage.getProcessInfo().getCloudeventAttributes())
             .build();
 
@@ -65,7 +64,6 @@ public class OulMessageHandlerTest
       utforarId.setVarde(UUID.randomUUID().toString());
 
       var processInfo = new ProcessInfo();
-      processInfo.setReplyTopic("test-topic");
       processInfo.setCloudeventAttributes(Map.of("TestKey", "TestValue"));
 
       var operativtUppgiftslagerStatusMessage = new OperativtUppgiftslagerStatusMessage();
