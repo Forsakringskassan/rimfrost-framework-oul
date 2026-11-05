@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-oul.
 
+## 1.1.6 (2026-11-05)
+
+### Bug Fixes
+
+-  Remove reply topic ([2af47](https://github.com/Forsakringskassan/rimfrost-framework-oul/commit/2af47ef918c669f) Lars Persson)  
+
 ## 1.1.5 (2026-10-29)
 
 ### Bug Fixes
