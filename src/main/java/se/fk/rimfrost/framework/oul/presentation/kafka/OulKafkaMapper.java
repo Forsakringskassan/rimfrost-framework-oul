@@ -13,7 +13,6 @@ public class OulKafkaMapper
    {
 
       var processInfo = ImmutableProcessInfo.builder()
-            .replyTopic(oulStatusMessage.getProcessInfo().getReplyTopic())
             .cloudeventAttributes(oulStatusMessage.getProcessInfo().getCloudeventAttributes())
             .build();
 

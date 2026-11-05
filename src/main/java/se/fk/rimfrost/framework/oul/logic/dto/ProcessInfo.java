@@ -8,6 +8,4 @@ import java.util.Map;
 public interface ProcessInfo
 {
    Map<String, String> cloudeventAttributes();
-
-   String replyTopic();
 }
